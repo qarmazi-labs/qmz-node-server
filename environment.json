@@ -1,0 +1,26 @@
+[
+  {
+    "name": "NODE_ENV",
+    "description": "Node environment type: development, qa, production.",
+    "required": false,
+    "default": "development"
+  },
+  {
+    "name": "HTTP_PORT",
+    "description": "Port to run http server.",
+    "required": false,
+    "default": 4891
+  },
+  {
+    "name": "HTTPS_PORT",
+    "description": "Port to run https server.",
+    "required": false,
+    "default": 2002
+  },
+  {
+    "name": "DOMAIN",
+    "description": "Domain associated with this server.",
+    "required": false,
+    "default": "example.com"
+  }
+]

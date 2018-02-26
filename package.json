@@ -1,0 +1,23 @@
+{
+  "name": "qmz-node-server",
+  "version": "0.0.7",
+  "description": "Boilerplate for Node.js server with LetsEncrypt certificate",
+  "main": "index.js",
+  "scripts": {
+    "start:container": "docker run -it --rm --name http-server -e DOMAIN=$DOMAIN qmz",
+    "start": "node index.js",
+    "test:config": "node index.js npm_config_environment"
+  },
+  "repository": "https://github.com/qarmazi-labs/qmz-node-server.git",
+  "author": "Migsar Navarro <migsar@qarmazilabs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "config": {
+    "env": "development",
+    "httpPort": 4891,
+    "httpsPort": 2002,
+    "domain": "migsar.com"
+  }
+}
